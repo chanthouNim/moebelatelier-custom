@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'we_custom'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="domain_typoscript_configuration">Additional Domain Configuration (Multiple Pagetree Only)</label>
+			<label index="select_domain">...</label>
+			<label index="pagetype.dropdown">Dropdown</label>
+		</languageKey>
+	</data>
+</T3locallang>

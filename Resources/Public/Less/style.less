@@ -1,0 +1,105 @@
+/* --- Temporary style start --- */
+.row-fluid [class*="col"],
+.row-fluid,
+.container {
+	border: 1px dotted grey;
+}
+
+/* --- Search box --- */
+#search-box {
+	#search_field {
+		border: medium none;
+		height: 28px;
+		line-height: 20px;
+		padding: 4px 30px 4px 6px;
+		width: 86px;
+	}
+	#search_button {
+		display: none;
+	}
+	.glyphicon.glyphicon-search {
+		cursor: pointer;
+		margin-left: -20px;
+	}
+}
+
+/* --- Breadcrumb --- */
+#breadcrumb {
+	ul {
+		display: inline;
+		list-style: none;
+		li {
+			float: left;
+		}
+		span.glyphicon.glyphicon-play {
+			font-size: 10px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}
+
+/* --- Social-link --- */
+.social-media ul {
+	float: right;
+	display: inline;
+	li {
+		float: left;
+		list-style: none;
+		padding-right: 10px;
+		a {
+			i.icon-social.facebook, i.icon-social.twitter, i.icon-social.rss, i.icon-social.google-plus, i.icon-social.pinterest {
+				height: 25px;
+				width: 25px;
+				background-size: 25px 25px;
+				display: block;
+			}
+			i.icon-social.facebook{
+				background-image: url("/typo3conf/ext/we_custom/Resources/Public/Images/facebook-25px@2x.png");
+			}
+			i.icon-social.twitter{
+				background-image: url("/typo3conf/ext/we_custom/Resources/Public/Images/twitter-25px@2x.png");
+			}
+			i.icon-social.rss {
+				background-image: url("/typo3conf/ext/we_custom/Resources/Public/Images/rss-25px@2x.png");
+			}
+			i.icon-social.google-plus {
+				background-image: url("/typo3conf/ext/we_custom/Resources/Public/Images/g-plus-25px@2x.png");
+			}
+			i.icon-social.pinterest {
+				background-image: url("/typo3conf/ext/we_custom/Resources/Public/Images/pinterest-25px@2x.png");
+			}
+		}
+	}
+	li:last-child {
+		padding-right: 0;
+	}
+}
+
+/* --- Fix bug bootstrap --- */
+.row-fluid {
+	display: inline-block;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+/* --- Footer --- */
+#footer {
+	#footer-nav ul {
+		 li {
+			display: inline;
+			list-style: none outside none;
+			text-align: center;
+			a {
+				padding: 0 5px 0 5px;
+			}
+		}
+		li:after {
+			content: "|";
+		}
+		li:last-child:after {
+			content: "";
+		}
+	}
+	text-align: center;
+}  

@@ -1,0 +1,62 @@
+## Include plugin constants
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:tq_seo/Configuration/TypoScript/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:t3colorbox/Configuration/TypoScript/constants.txt"/>
+## <INCLUDE_TYPOSCRIPT: source="FILE: EXT:news/Configuration/TypoScript/constants.txt"/>
+
+## Name
+const.project.name = Boxmodel
+const.project.partial.name = boxmodel
+const.copyright.fixyear = 2009	
+const.project.email.live = 
+const.project.email.test = andreasm987@gmail.com
+
+## URL
+const.url.live = 
+
+## Logo
+const.logo.title = Boxmodel
+const.logo.altText = Boxmodel Logo
+const.logo.height = 18
+const.logo.file = EXT:we_custom/Resources/Public/Images/logo.png
+
+## Comment
+const.headerComment = TYPO3 integration by Web Essentials - Redefining Web Development - http://www.web-essentials.asia/
+
+## Meta keyword and decription
+const.meta.description = Web Essentials' Boxmodel for TYPO3 integration makes your live easier.
+const.meta.keywords = Boxmodel, Slimboxmodel, Web Essentials
+
+## Paths custom only
+const.custom.path.private = EXT:we_custom/Resources/Private/
+const.custom.path.public = EXT:we_custom/Resources/Public/
+const.custom.path.plugin = {$const.custom.path.private}Templates/Plugin/
+const.custom.path.css = {$const.custom.path.public}Css/
+const.custom.path.script = {$const.custom.path.public}JavaScript/
+
+### Paths
+const.locallang = LLL:{$const.custom.path.private}Language/locallang.xml
+const.path.fluidpages.templateRootPath = {$const.custom.path.private}Templates/
+const.path.fluidpages.partialRootPath = {$const.custom.path.private}Partials/
+const.path.fluidpages.layoutRootPath = {$const.custom.path.private}Layouts/
+
+## Social Media
+const.socialmedia.facebook.title = Facebook
+const.socialmedia.facebook.link = https://www.facebook.com/WebEssentialsAsia
+
+const.socialmedia.twitter.title = Twitter
+const.socialmedia.twitter.link = https://twitter.com/w3essentials
+
+const.socialmedia.linkedin.title = LinkedIn
+const.socialmedia.linkedin.link = https://linkedin.com/company/web-essentials‎
+
+## Page
+const.page.news = 
+
+## Specific labels
+const.accessibility.skip_nav_label = Skip Navigation
+
+##  t3Colorbox constants
+plugin.t3colorbox.includejquerycore = 0
+
+## Custom News constants
+plugin.tx_news.settings.detailPid =

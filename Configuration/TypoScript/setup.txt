@@ -1,0 +1,18 @@
+[GLOBAL]
+plugin.tx_wecustom.view {
+	label = Fluid Content Elements - Web Essentials Custom Content Element
+	extensionKey = we_custom
+	templateRootPath = EXT:we_custom/Resources/Private/Templates/
+	partialRootPath = EXT:flux/Resources/Private/Partials/
+	layoutRootPath = EXT:fluidcontent/Resources/Private/Layouts/
+}
+
+[globalVar = IENV:TYPO3_REQUEST_HOST = {$const.url.live}]
+	## Live environment only
+	plugin.Tx_Formhandler.settings.predef.contact_form.finishers.1.config.admin.to_email = {$const.project.email.live}
+[globalVar = IENV:TYPO3_REQUEST_HOST = {$const.url.demo}]
+        ## Demo environment only
+        plugin.Tx_Formhandler.settings.predef.contact_form.finishers.1.config.admin.to_email = {$const.project.email.demo}
+[else]
+	plugin.Tx_Formhandler.settings.predef.contact_form.finishers.1.config.admin.to_email = {$const.project.email.test}
+[end]

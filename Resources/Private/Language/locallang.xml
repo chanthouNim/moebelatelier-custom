@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the FRONTEND of the WE Custom extension</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<!-- General -->
+			<label index="powered_by">Web Essentials</label>
+			<label index="powered_by_link">http://www.web-essentials.asia/</label>
+			<label index="copyright_note">© ###FIX_YEAR###-###YEAR### Boxmodel. powered by ###POWERED_BY###</label>
+			<label index="search">Search</label>
+			<label index="sitetitle">Boxmodel</label>
+			<label index="home">Home</label>
+			<label index="flux.teaser">Custom: Teaser content elements</label>
+			<label index="flux.teaser.description">Teaser Contain: image, text and link</label>
+			<label index="flux.teaser.fields.image">Image</label>
+			<label index="flux.teaser.fields.header">Header text</label>
+			<label index="flux.teaser.fields.text">Body text</label>
+			<label index="flux.teaser.fields.linkLabel">Link label</label>
+			<label index="flux.teaser.fields.linkTarget">Link</label>
+		</languageKey>
+		<languageKey index="km" type="array">
+			<!-- General -->
+			<label index="powered_by">Web Essentials</label>
+			<label index="powered_by_link">http://www.web-essentials.asia/</label>
+			<label index="copyright_note">© ###FIX_YEAR###-###YEAR### Boxmodel. powered by ###POWERED_BY###</label>
+			<label index="search">ស្វែងរក...</label>
+			<label index="sitetitle">Boxmodel</label>
+			<label index="home">ទំព័រដើម</label>
+		</languageKey>
+	</data>
+</T3locallang>
