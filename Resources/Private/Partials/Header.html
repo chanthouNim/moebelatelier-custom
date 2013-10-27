@@ -1,25 +1,14 @@
 <f:section name="Header">
 	<header class="navbar">
-		<div class="container">
-			<div class="col-lg-12">
-				<div class="navbar-header">
-					<button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<f:cObject typoscriptObjectPath="lib.misc.logo" />
-				</div>
-
-				<nav role="navigation" class="navbar-collapse bs-navbar-collapse collapse" >
-					<f:cObject typoscriptObjectPath="lib.nav.main" />
-					<f:cObject typoscriptObjectPath="lib.misc.searchbox"/>
-					<div style="display:none;">
-						<f:cObject typoscriptObjectPath="lib.nav.language" />
-					</div>
-				</nav>
-			</div>
+		<f:cObject typoscriptObjectPath="lib.misc.logo" />
+		<button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<div class="hidden-xs">
+			<f:cObject typoscriptObjectPath="lib.misc.searchbox"/>
 		</div>
 	</header>
 </f:section>

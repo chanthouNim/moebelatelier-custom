@@ -1,17 +1,19 @@
-<div class="hidden"><f:cObject typoscriptObjectPath="lib.misc.accessibility" /></div>
-<f:render section="Header" partial="Header"/>
-<f:render section="SocialMedia" partial="SocialMedia"/>
-<div class="container">
-	<f:render section="Breadcrumb" partial="Breadcrumb"/>
-	<!--TYPO3SEARCH_begin-->
-	<div id="main-content">
-		<f:render section="PageTitle" partial="PageTitle"/>
-		<f:render section="Content"/>
+<div id="main-wrapper" class="container">
+	<div class="hidden"><f:cObject typoscriptObjectPath="lib.misc.accessibility" /></div>
+	<f:render section="Header" partial="Header"/>
+	<div class="row">
+		<f:render section="Navigation" partial="Navigation"/>
+		<!--TYPO3SEARCH_begin-->
+		<div id="main-content" class="col-sm-9">
+			<f:render section="Breadcrumb" partial="Breadcrumb"/>
+			<f:render section="PageTitle" partial="PageTitle"/>
+			<f:render section="Content"/>
+		</div>
+		<!--TYPO3SEARCH_end-->
 	</div>
-	<!--TYPO3SEARCH_end-->
+	<f:render section="Footer" partial="Footer"/>
 </div>
-<f:render section="Footer" partial="Footer"/>
-
+<f:render section="SocialMedia" partial="SocialMedia"/>
 <script type="text/javascript">
 	less = {
 		env: "development", // or "production"

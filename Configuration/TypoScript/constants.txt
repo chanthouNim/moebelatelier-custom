@@ -4,27 +4,27 @@
 ## <INCLUDE_TYPOSCRIPT: source="FILE: EXT:news/Configuration/TypoScript/constants.txt"/>
 
 ## Name
-const.project.name = Boxmodel
-const.project.partial.name = boxmodel
-const.copyright.fixyear = 2009	
-const.project.email.live = 
-const.project.email.test = andreasm987@gmail.com
+const.project.name = Möbelatelier Gebr. Gadient
+const.project.partial.name = moebelatelier
+const.copyright.fixyear = 2013	
+const.project.email.live = info@moebelatelier-gadient.ch
+const.project.email.test = simon.gadient@sunrise.ch
 
 ## URL
 const.url.live = 
 
 ## Logo
-const.logo.title = Boxmodel
-const.logo.altText = Boxmodel Logo
-const.logo.height = 18
-const.logo.file = EXT:we_custom/Resources/Public/Images/logo.png
+const.logo.title = Möbelatelier Gebr. Gadient
+const.logo.altText = Möbelatelier Gebr. Gadient Logo
+const.logo.height = 86
+const.logo.file = EXT:we_custom/Resources/Public/Images/logo-moebelatelier-gadient.png
 
 ## Comment
-const.headerComment = TYPO3 integration by Web Essentials - Redefining Web Development - http://www.web-essentials.asia/
+const.headerComment = Der gut ins Holz ruft, kriegt eine gute Antwort.
 
 ## Meta keyword and decription
-const.meta.description = Web Essentials' Boxmodel for TYPO3 integration makes your live easier.
-const.meta.keywords = Boxmodel, Slimboxmodel, Web Essentials
+const.meta.description = 
+const.meta.keywords = 
 
 ## Paths custom only
 const.custom.path.private = EXT:we_custom/Resources/Private/
@@ -41,13 +41,13 @@ const.path.fluidpages.layoutRootPath = {$const.custom.path.private}Layouts/
 
 ## Social Media
 const.socialmedia.facebook.title = Facebook
-const.socialmedia.facebook.link = https://www.facebook.com/WebEssentialsAsia
+const.socialmedia.facebook.link = https://www.facebook.com/moebelateliergadient/
 
 const.socialmedia.twitter.title = Twitter
-const.socialmedia.twitter.link = https://twitter.com/w3essentials
+const.socialmedia.twitter.link = 
 
 const.socialmedia.linkedin.title = LinkedIn
-const.socialmedia.linkedin.link = https://linkedin.com/company/web-essentials‎
+const.socialmedia.linkedin.link = ‎
 
 ## Page
 const.page.news = 

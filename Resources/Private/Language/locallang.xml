@@ -7,11 +7,11 @@
 	<data type="array">
 		<languageKey index="default" type="array">
 			<!-- General -->
-			<label index="powered_by">Web Essentials</label>
-			<label index="powered_by_link">http://www.web-essentials.asia/</label>
-			<label index="copyright_note">© ###FIX_YEAR###-###YEAR### Boxmodel. powered by ###POWERED_BY###</label>
+			<label index="powered_by"></label>
+			<label index="powered_by_link"></label>
+			<label index="copyright_note">© ###YEAR### Möbelatelier Gebr. Gadient | Hauptstrasse 19 | 8584 Leimbach TG | Switzerland | +41 71 642 42 00</label>
 			<label index="search">Search</label>
-			<label index="sitetitle">Boxmodel</label>
+			<label index="sitetitle">Möbelatelier Gebr. Gadient</label>
 			<label index="home">Home</label>
 			<label index="flux.teaser">Custom: Teaser content elements</label>
 			<label index="flux.teaser.description">Teaser Contain: image, text and link</label>
@@ -20,15 +20,6 @@
 			<label index="flux.teaser.fields.text">Body text</label>
 			<label index="flux.teaser.fields.linkLabel">Link label</label>
 			<label index="flux.teaser.fields.linkTarget">Link</label>
-		</languageKey>
-		<languageKey index="km" type="array">
-			<!-- General -->
-			<label index="powered_by">Web Essentials</label>
-			<label index="powered_by_link">http://www.web-essentials.asia/</label>
-			<label index="copyright_note">© ###FIX_YEAR###-###YEAR### Boxmodel. powered by ###POWERED_BY###</label>
-			<label index="search">ស្វែងរក...</label>
-			<label index="sitetitle">Boxmodel</label>
-			<label index="home">ទំព័រដើម</label>
 		</languageKey>
 	</data>
 </T3locallang>
