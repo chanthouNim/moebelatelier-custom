@@ -33,3 +33,13 @@ pageNewsRSS {
 		absRefPrefix < config.baseURL
 	}
 }
+## Condition set when on news details view
+[globalVar = GP:tx_news_pi1|news > 0]
+		# Set default action to detail if a news is passed through parameter
+	config.defaultGetVars {
+		tx_news_pi1.action = detail
+	}
+
+		# Clear page title because news title will be used
+	lib.misc.pagetitle >
+[global]

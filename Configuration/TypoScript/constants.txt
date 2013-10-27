@@ -1,7 +1,7 @@
 ## Include plugin constants
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:tq_seo/Configuration/TypoScript/constants.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:t3colorbox/Configuration/TypoScript/constants.txt"/>
-## <INCLUDE_TYPOSCRIPT: source="FILE: EXT:news/Configuration/TypoScript/constants.txt"/>
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:news/Configuration/TypoScript/constants.txt"/>
 
 ## Name
 const.project.name = Möbelatelier Gebr. Gadient
@@ -60,3 +60,102 @@ plugin.t3colorbox.includejquerycore = 0
 
 ## Custom News constants
 plugin.tx_news.settings.detailPid =
+
+plugin.tx_news {
+	view {
+		templateRootPath = {$const.custom.path.plugin}news/Templates/
+		partialRootPath = {$const.custom.path.plugin}news/Partials/
+	}
+}
+
+## Custom Formhandler constants
+formhandlerExamples.basic.contact-form {
+	# cat=Formhandler Examples - Basic - Contact Form/basic/10; type=string; label=Root path: Path where the example was saved to.
+	email {
+		user {
+			# cat=Formhandler Examples - Basic - Contact Form/basic/20; type=string; label=User email sender: Email address to use as sender address for the user email.
+			sender_email = 
+		}
+
+		admin {
+			# cat=Formhandler Examples - Basic - Contact Form/basic/20; type=string; label=Admin email sender: Email address to use as sender address for the admin email.
+			sender_email = 
+
+			# cat=Formhandler Examples - Basic - Contact Form/basic/20; type=string; label=Admin email recipient: Email address of an admin to receive the contact request.
+			to_email = 
+		}
+	}
+
+	# cat=Formhandler Examples - Basic - Contact Form/basic/40; type=string; label=Redirect Page: Page ID to redirect after successful form submission.
+	redirectPage = 
+}
+
+plugin.formhandler_subscription {
+	rootPath = {$const.custom.path.plugin}formhandler_subscription/
+	languagePath = typo3conf/ext/we_custom/Resources/Private/Language/
+
+		# cat=plugin.formhandler_subscription; type=string; label=Subscribers table: Table that contains the subscriber records (e.g. tt_address or fe_users)
+	subscribersTable = tt_address
+
+		# cat=plugin.formhandler_subscription; type=string; label=Subscriber record PIDs: Comma seperated list of PIDs that contain the subscribers
+	subscriberRecordsPID = 34
+
+		# cat=plugin.formhandler_subscription; type=int; label=Subscriber records recursive: How deep down the tree should subscriber records be searched
+	subscriberRecordsRecursive = 0
+
+		# cat=plugin.formhandler_subscription; type=string; label=New subscriber record PID: ID of the page where new subscribers will be stored
+	newSubscriberRecordsPID = 34
+
+		# cat=plugin.formhandler_subscription; type=int+; label=Request subscription success PID: ID of the page where will be redirected to after successfully filling out the registration form
+	requestSubscriptionSuccessPID = 32
+
+		# cat=plugin.formhandler_subscription; type=int+; label=Confirm subscription PID: ID of the page where the user can confirm his subscription
+	confirmSubscriptionPID = 33
+
+		# cat=plugin.formhandler_subscription; type=int+; label=Request update success PID: ID of the page where will be redirected to after successfully filling out the update request form
+	requestUpdateSuccessPID = 
+
+		# cat=plugin.formhandler_subscription; type=int+; label=Update subscription form PID: ID of the page where the user can update his subscription
+	updateSubscriptionFormPID =
+
+		# cat=plugin.formhandler_subscription; type=int+; label=Update subscription success PID: ID of the page where the user will be redirected to after successfully updating his subscription data
+	updateSubscriptionSuccessPID =
+
+		# cat=plugin.formhandler_subscription; type=int+; label=Remove subscription success PID: ID of the page where the user will be redirected to after successfully removing his subscription
+	removeSubscriptionSuccessPID =
+
+		# cat=plugin.formhandler_subscription; type=int+; label=Auth code invalid PID: ID of the page where the user will be redirected to when a required auth code is missing or the provided auth code is invalid
+	authCodeInvalidPID = 35 
+
+		# cat=plugin.formhandler_subscription; type=string; label=Email sender address: The email address that will be used as sender of the newsletter subscription mails
+	emailSenderAddress = noreply@web-essentials.asia
+
+		# cat=plugin.formhandler_subscription; type=string; label=Email sender name: The name that will be used as sender of the newsletter subscription mails
+	emailSenderName = Asian Hope International School
+
+		# cat=plugin.formhandler_subscription; type=string; label=Global language file: This file is included in every prefedined form configuration and used for e-mail subjects
+	globalLanguageFile = EXT:formhandler_subscription/Resources/Language/Global.xml
+
+		# cat=plugin.formhandler_subscription; type=string; label=Template path: The directory where the templates are stored
+	templatePath = EXT:formhandler_subscription/Resources/Templates
+
+		  # cat=plugin.formhandler_subscription; type=boolean; label=Generate tiny urls: If this is true the urls generated by the GenerateAuthCodeDB finisher will be shortened by the tinyurls extension
+	generateTinyUrls = 0
+}
+
+## tx_directmail configuration. 
+plugin.tx_directmail_pi1 {
+  
+    # cat=plugin.tx_directmail_pi1//; type=string; label= Site url: Enter the url of the site here.
+  siteUrl = http://example.com/
+  
+    # cat=plugin.tx_directmail_pi1/enable/; type=boolean; label= Use flowed format: The same option should be set on the direct mail.
+  flowedFormat = 0
+  
+      # cat=plugin.tx_directmail_pi1/enable/; type=boolean; label= Double line feeds: Line feeds found in bodytext will be doubled in the plain text version.
+  doubleLF = 0
+  
+      # cat=plugin.tx_directmail_pi1//; type=string; label= Split char to remove from graphical headers: Headers built as GIFBUILDER objects may contain split characters. If specified here, they will be removed from headers of type 5 in the plain text version.
+  removeSplitChar =
+  
+}

@@ -1,6 +1,6 @@
 TCEFORM {
 	pages {
-
+                module.disabled = 0
 	}
 
 	tt_content {
